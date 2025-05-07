@@ -137,20 +137,76 @@ main {
     box-shadow: inset 0px 0px 0px 2px var(--color006);
 }
 
-/*Footer*/
+/*Gerar*/
 
-footer {
-    background-color: var(--color002);
+.body-generate-page {
+    background-image: url(../assets/waves2.svg);
 }
 
-footer h3 {
-    font-size: 1rem;
-    font-weight: 400;
+.prompt-section {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
 }
 
-footer a {
-    text-decoration: none;
+.prompt-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.prompt-header h3 {
+    font-size: 2rem;
+    font-weight: 700;
     color: var(--color006);
+}
+
+.prompt-content {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;;
+}
+
+.prompt-content input {
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    background-color: var(--color001);
+    border-radius: 50px;
+    transition: all .3s ease-in-out;
+    font: 400 var(--font001) 1rem;
+}
+
+.prompt-content input:focus {
+    outline: none;
+    box-shadow: inset 0px 0px 0px 2px var(--color006);
+}
+
+.prompt-content button {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .5rem;
+    margin: .7rem;
+    border: none;
+    background-color: var(--color006);
+    color: var(--color001);
+    border-radius: 50%;
     font-size: 1rem;
-    font-weight: 400;
+    font-weight: 500;
+    transition: all .3s ease-in-out;
+}
+
+.prompt-content button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.prompt-content button img {
+    width: 20px;
+    filter: invert(1);
 }
