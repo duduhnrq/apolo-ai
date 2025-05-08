@@ -47,7 +47,7 @@ header.scrolled {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem;
+    padding: 1.5rem;
 }
 
 .header-container .header-logo {
@@ -111,7 +111,7 @@ main {
     gap: 1rem;
 }
 
-.hero-content h2 {
+.hero-content h1 {
     font-size: 3rem;
     font-weight: 700;
     line-height: 1.2;
@@ -209,4 +209,89 @@ main {
 .prompt-content button img {
     width: 20px;
     filter: invert(1);
+}
+
+/*About Page*/
+
+.body-about-page {
+    background-image: url(../assets/waves4.svg);
+}
+
+.about-section {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.about-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: auto;
+    height: auto;
+    background-color: var(--color003);
+    border-radius: 50px;
+    padding: 1.5rem;
+}
+
+.card-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.card-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-image img {
+    width: 120px;
+    border-radius: 50%;
+    border: 3px solid var(--color006);
+}
+
+.card-titles h2 {
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.card-titles p {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.card-icons img {
+    width: 20px;
+    filter: brightness(0) saturate(100%) invert(100%) sepia(58%) saturate(357%) hue-rotate(277deg) brightness(116%) contrast(100%);;
+}
+
+.card-icons a {
+    display: flex;
+    background-color: var(--color006);
+    padding: .8rem;
+    border-radius: 50%;
+    transition: all .3s ease-in-out;
+}
+
+.card-icons a:hover {
+    transform: scale(1.1);
+}
+
+.card-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.about-header h1 {
+    font-size: 3rem;
+    font-weight: 700;
 }
