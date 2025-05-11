@@ -437,3 +437,20 @@ main {
 .social-icons img:hover {
     transform: scale(1.1);
 }
+
+/*Gallery Page*/
+
+.gallery-section {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.gallery-item img {
+    width: 30%;
+    height: auto;
+    border-radius: 8px;
+}
