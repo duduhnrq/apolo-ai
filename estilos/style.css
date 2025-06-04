@@ -22,7 +22,7 @@
 body {
     font-family: 'Poppins', sans-serif;
     color: var(--color006);
-    background: var(--color002) url(../assets/waves.svg) no-repeat center center;
+    background: var(--color002) url(../assets/waves.svg) no-repeat center bottom;
     background-size: cover;
 }
 
@@ -36,10 +36,7 @@ header {
     display: flex;
     justify-content: center;
     width: 100%;
-}
-
-header.scrolled {
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    background-color: var(--color002);
 }
 
 .header-container {
@@ -50,27 +47,27 @@ header.scrolled {
     padding: 1.5rem;
 }
 
-.header-container .header-logo {
+.header-logo {
     text-decoration: none;
     font-size: 1.5rem;
     font-weight: 400;
     color: var(--color006);
 }
 
-.header-container ul {
+.nav-list {
     display: flex;
     list-style: none;
-    gap: 2rem;;
+    gap: 2rem;
 }
 
-.header-container ul li a {
+.nav-list li a {
     text-decoration: none;
     color: var(--color006);
     font-size: 1rem;
     font-weight: 400;
 }
 
-.header-container ul li a::after {
+.nav-list li a::after {
     content: '';
     display: block;
     width: 0;
@@ -79,7 +76,7 @@ header.scrolled {
     transition: all .3s ease-in-out;
 }
 
-.header-container ul li a:hover::after {
+.nav-list li a:hover::after {
     width: 100%;
 }
 
@@ -90,7 +87,7 @@ main {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: calc(100vh - 99px);
+    height: calc(100vh - 83px);
 }
 
 .hero-section {
@@ -341,7 +338,6 @@ main {
     justify-content: center;
     align-items: center;
     width: 100%;
-    background-color: var(--color002);
     border-radius: 8px;
 }
 
@@ -441,16 +437,86 @@ main {
 /*Gallery Page*/
 
 .gallery-section {
+    height: calc(100vh - 83px);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gallery-header {
+    box-sizing: border-box;
+}
+
+.gallery-header h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 1rem;
+}
+
+.gallery-container {
     width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    gap: 2rem;
+}
+
+.gallery-item {
+    width: 50%;
+    height: 100%;
+    padding: 1rem;
+    display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: .5rem;
+    border-radius: .5rem;
+    background-color: var(--color001);
 }
 
 .gallery-item img {
-    width: 30%;
+    width: 100%;
     height: auto;
     border-radius: 8px;
+}
+
+.gallery-item p {
+    font-size: .8rem;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.gallery-item button{
+    width: 180px;
+    border: none;
+    font-family: var(--font001);
+    text-align: center;
+    text-decoration: none;
+    color: var(--color001);
+    background-color: var(--color006);
+    padding: .5rem;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: all .3s ease-in-out;
+}
+
+.gallery-item button:hover {
+    cursor: pointer;
+    background-color: var(--color001);
+    color: var(--color006);
+    box-shadow: inset 0px 0px 0px 2px var(--color006);
+}
+
+/* Media Queries */
+
+@media (max-width: 1400px) {
+    .hero-content {
+        width: 70%;
+    }
+
+    .about-section {
+        width: 70%;
+    }
 }
